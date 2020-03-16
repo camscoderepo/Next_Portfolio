@@ -8,7 +8,7 @@ export default ({ data }) => {
         <div className="projects">
         <ul className="project-cards">
           {data.slice(0, 20).map((i, index) => (
-            <Fade bottom duration={1500} delay={100 * index} key={i.id}>
+            <Fade bottom duration={1500} delay={10 * index} key={i.id}>
               <li className="project-card">
                 <div className="about">
                   <p>
