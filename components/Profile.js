@@ -21,7 +21,6 @@ export default ({
     GITHUB_NAME,
     NAME,
     ROLE,
-    EMAIL,
     TECH_STACK,
     SOCIAL_MEDIA,
     LOCATION
@@ -38,9 +37,6 @@ export default ({
           <p className="location">
             <i className="fas fa-map-marker-alt"></i>
             {`${LOCATION.state}, ${LOCATION.country}`}
-          </p>
-          <p className="email">
-            <i className="fas fa-envelope"></i> {EMAIL}
           </p>
           <p>{ROLE}</p>
 

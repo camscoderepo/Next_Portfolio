@@ -1,12 +1,13 @@
 import Navbar from '../components/Navbar'
 
-function About() {
+
+function Stock() {
     return (
     <div>
         <Navbar></Navbar>
-        <p>This is the about page</p>
+        <p>This is the stock demo page</p>
     </div>
     );
 }
 
-export default About;
+export default Stock;

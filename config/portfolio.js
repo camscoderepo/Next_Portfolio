@@ -2,7 +2,6 @@ module.exports = {
     GITHUB_NAME: "camscoderepo",
     NAME: "Cameron Roman",
     ROLE: "Software Engineer",
-    EMAIL: "camroman95@gmail.com",
     LOCATION: {
         state: "Denver",
         country: "United States"

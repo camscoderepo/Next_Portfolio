@@ -3,9 +3,10 @@ import fetch from "isomorphic-unfetch";
 import Profile from "../components/Profile";
 import Projects from "../components/Projects";
 import { css } from "@emotion/core";
-import { GridLoader } from "react-spinners";
+import { RingLoader } from "react-spinners";
 import Meta from "../components/Meta";
 import Config from "../config/portfolio";
+import Navbar from '../components/Navbar';
 
  const Portfolio = ({data}) => {
     const [isLoading, setIsLoading] = useState(true);
@@ -26,10 +27,11 @@ import Config from "../config/portfolio";
         <Meta />
         {isLoading ? (
             <div style={{ height: "640px" }}>
-            <GridLoader css={override} size={38} />
+            <RingLoader css={override} size={38} />
             </div>
         ) : (
             <>
+            <Navbar></Navbar>
             <div className="container" style={{ overflow: "hidden" }}>
                 <Profile Config={Config} />
                 <Projects data={data} />

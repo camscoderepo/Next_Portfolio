@@ -1,8 +1,11 @@
+import Navbar from '../components/Navbar';
 
-export default function Index() {
+function Index() {
     return (
-    <div>
-        <p>Hello Next.js</p>
-    </div>
+    <Navbar>
+        
+    </Navbar>
     );
 }  
+
+export default Index;

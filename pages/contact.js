@@ -1,4 +1,17 @@
 import React, { useState } from 'react'
+import styled from '@emotion/styled'
+import { css } from '@emotion/core'
+import Navbar from '../components/Navbar'
+
+const border = props =>
+  css`
+    border: 5px solid black;
+  `
+
+const Box = styled.div`
+  ${border};
+`
+
 
 export default () => {
   const [status, setStatus] = useState({
@@ -59,22 +72,27 @@ export default () => {
 
   return (
     <main>
+      <Navbar></Navbar>
       <form onSubmit={handleOnSubmit}>
-        <label htmlFor="email">Email</label>
-        <input
-          id="email"
-          type="email"
-          onChange={handleOnChange}
-          required
-          value={inputs.email}
-        />
-        <label htmlFor="message">Message</label>
-        <textarea
-          id="message"
-          onChange={handleOnChange}
-          required
-          value={inputs.message}
-        />
+        <Box>
+          <label htmlFor="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            onChange={handleOnChange}
+            required
+            value={inputs.email}
+          />
+        </Box>
+        <Box>
+          <label htmlFor="message">Message</label>
+          <textarea
+            id="message"
+            onChange={handleOnChange}
+            required
+            value={inputs.message}
+          />
+        </Box>
         <button type="submit" disabled={status.submitting}>
           {!status.submitting
             ? !status.submitted
@@ -82,6 +100,7 @@ export default () => {
               : 'Submitted'
             : 'Submitting...'}
         </button>
+        
       </form>
       {status.info.error && (
         <div className="error">Error: {status.info.msg}</div>
