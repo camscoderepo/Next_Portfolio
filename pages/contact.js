@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import styled from '@emotion/styled'
+import { Input } from '@material-ui/core'
+import { TextField } from '@material-ui/core/'
 import { css } from '@emotion/core'
 import Navbar from '../components/Navbar'
-
+import { Container } from '@material-ui/core'
+import { Button } from '@material-ui/core'
 const border = props =>
   css`
     border: 5px solid black;
@@ -71,36 +74,43 @@ export default () => {
   }
 
   return (
-    <main>
+    <Container maxWidth="sm">
       <Navbar></Navbar>
       <form onSubmit={handleOnSubmit}>
-        <Box>
+          <label htmlFor="name">Name</label>
+          <Input
+            id="name"
+            type="name"
+            onChange={handleOnChange}
+            required
+            value={inputs.name}
+          />
           <label htmlFor="email">Email</label>
-          <input
+          <Input
             id="email"
             type="email"
             onChange={handleOnChange}
             required
             value={inputs.email}
           />
-        </Box>
-        <Box>
+        
           <label htmlFor="message">Message</label>
-          <textarea
+          <TextField
             id="message"
+            label="Multiline"
+            multiline
+            rowsMax="4"
             onChange={handleOnChange}
             required
             value={inputs.message}
           />
-        </Box>
-        <button type="submit" disabled={status.submitting}>
+        <Button variant="contained" color="primary" type="submit" disabled={status.submitting}>
           {!status.submitting
             ? !status.submitted
               ? 'Submit'
               : 'Submitted'
             : 'Submitting...'}
-        </button>
-        
+        </Button>
       </form>
       {status.info.error && (
         <div className="error">Error: {status.info.msg}</div>
@@ -108,6 +118,6 @@ export default () => {
       {!status.info.error && status.info.msg && (
         <div className="success">{status.info.msg}</div>
       )}
-    </main>
+    </Container>
   )
 }
