@@ -12,7 +12,6 @@ export default () => (
       <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
       <link rel="shortcut icon" href="/favicon.ico"></link>
       <title>Cameron Roman | Software Engineer</title>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
       <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Noto+Sans:400,600,700&display=swap" rel="stylesheet"></link>
       <link
         rel="stylesheet"

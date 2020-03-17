@@ -74,43 +74,45 @@ export default () => {
   }
 
   return (
-    <Container maxWidth="sm">
+    <main>
       <Navbar></Navbar>
       <form onSubmit={handleOnSubmit}>
-          <label htmlFor="name">Name</label>
-          <Input
-            id="name"
-            type="name"
-            onChange={handleOnChange}
-            required
-            value={inputs.name}
-          />
-          <label htmlFor="email">Email</label>
-          <Input
-            id="email"
-            type="email"
-            onChange={handleOnChange}
-            required
-            value={inputs.email}
-          />
-        
-          <label htmlFor="message">Message</label>
-          <TextField
-            id="message"
-            label="Multiline"
-            multiline
-            rowsMax="4"
-            onChange={handleOnChange}
-            required
-            value={inputs.message}
-          />
-        <Button variant="contained" color="primary" type="submit" disabled={status.submitting}>
-          {!status.submitting
-            ? !status.submitted
-              ? 'Submit'
-              : 'Submitted'
-            : 'Submitting...'}
-        </Button>
+        <Container>
+            <label htmlFor="name">Name</label>
+            <Input
+              id="name"
+              type="name"
+              onChange={handleOnChange}
+              required
+              value={inputs.name}
+            />
+            <label htmlFor="email">Email</label>
+            <Input
+              id="email"
+              type="email"
+              onChange={handleOnChange}
+              required
+              value={inputs.email}
+            />
+          
+            <label htmlFor="message">Message</label>
+            <TextField
+              id="message"
+              label="Multiline"
+              multiline
+              rowsMax="4"
+              onChange={handleOnChange}
+              required
+              value={inputs.message}
+            />
+          <Button variant="contained" color="primary" type="submit" disabled={status.submitting}>
+            {!status.submitting
+              ? !status.submitted
+                ? 'Submit'
+                : 'Submitted'
+              : 'Submitting...'}
+          </Button>
+        </Container>
       </form>
       {status.info.error && (
         <div className="error">Error: {status.info.msg}</div>
@@ -118,6 +120,6 @@ export default () => {
       {!status.info.error && status.info.msg && (
         <div className="success">{status.info.msg}</div>
       )}
-    </Container>
+    </main>
   )
 }
