@@ -4,8 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton'
 import Button from '@material-ui/core/Button';
 import { Link, withStyles } from '@material-ui/core';
-
-
+import Typography from '@material-ui/core/Typography';
 
 
 function Navbar() {
@@ -19,8 +18,9 @@ function Navbar() {
               </IconButton>
               <Button href="/" color="inherit">Home</Button>
               <Button href="/about" color="inherit">About</Button>
-              <Button href="/portfolio" color="inherit">Portfolio</Button>
+              <Button href="/personal" color="inherit">Github</Button>
               <Button href="/contact" color="inherit">Contact</Button>
+              <Button href="/pricing" color="inherit">Pricing</Button>
               </>
         }</Toolbar>
         </AppBar>

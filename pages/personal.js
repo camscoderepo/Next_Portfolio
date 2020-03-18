@@ -8,7 +8,7 @@ import Meta from "../components/Meta";
 import Config from "../config/portfolio";
 import Navbar from '../components/Navbar';
 
- const Portfolio = ({data}) => {
+ const Personal = ({data}) => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
@@ -31,7 +31,7 @@ import Navbar from '../components/Navbar';
             </div>
         ) : (
             <>
-            <Navbar></Navbar>
+            
             <div className="container" style={{ overflow: "hidden" }}>
                 <Profile Config={Config} />
                 <Projects data={data} />
@@ -57,7 +57,7 @@ import Navbar from '../components/Navbar';
 };
 
 
-Portfolio.getInitialProps = async () => {
+Personal.getInitialProps = async () => {
     const res = await fetch(
         `https://api.github.com/users/${Config.GITHUB_NAME}/repos`
     );
@@ -65,4 +65,4 @@ Portfolio.getInitialProps = async () => {
     return { data };
 };
 
-export default Portfolio;
+export default Personal;

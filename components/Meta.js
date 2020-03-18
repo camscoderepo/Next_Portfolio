@@ -1,7 +1,9 @@
 import Head from "next/head";
+import Navbar from '../components/Navbar';
 
 export default () => (
   <div>
+  <Navbar></Navbar>
     <Head>
       <meta charSet="UTF-8" />
       <meta

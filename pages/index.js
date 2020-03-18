@@ -2,9 +2,9 @@ import Navbar from '../components/Navbar';
 
 function Index() {
     return (
-    <Navbar>
-        
-    </Navbar>
+        <div>
+            <Navbar></Navbar>
+        </div>
     );
 }  
 

@@ -6,6 +6,8 @@ import { css } from '@emotion/core'
 import Navbar from '../components/Navbar'
 import { Container } from '@material-ui/core'
 import { Button } from '@material-ui/core'
+
+
 const border = props =>
   css`
     border: 5px solid black;
@@ -74,10 +76,11 @@ export default () => {
   }
 
   return (
-    <main>
+      <main>
       <Navbar></Navbar>
       <form onSubmit={handleOnSubmit}>
         <Container>
+          <div>
             <label htmlFor="name">Name</label>
             <Input
               id="name"
@@ -86,6 +89,8 @@ export default () => {
               required
               value={inputs.name}
             />
+          </div>
+          <div>
             <label htmlFor="email">Email</label>
             <Input
               id="email"
@@ -94,17 +99,19 @@ export default () => {
               required
               value={inputs.email}
             />
-          
+          </div>
+          <div>
             <label htmlFor="message">Message</label>
             <TextField
               id="message"
               label="Multiline"
               multiline
-              rowsMax="4"
+              rows="4"
               onChange={handleOnChange}
               required
               value={inputs.message}
             />
+          </div>
           <Button variant="contained" color="primary" type="submit" disabled={status.submitting}>
             {!status.submitting
               ? !status.submitted
