@@ -5,7 +5,7 @@ import Projects from "../components/Projects";
 import { css } from "@emotion/core";
 import { RingLoader } from "react-spinners";
 import Meta from "../components/Meta";
-import Config from "../config/portfolio";
+import Config from "../config/personal";
 import Navbar from '../components/Navbar';
 
  const Personal = ({data}) => {

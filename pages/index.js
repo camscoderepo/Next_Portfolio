@@ -1,9 +1,9 @@
-import Navbar from '../components/Navbar';
+import Meta from '../components/Meta';
 
 function Index() {
     return (
         <div>
-            <Navbar></Navbar>
+            <Meta />
         </div>
     );
 }  

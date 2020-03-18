@@ -1,10 +1,10 @@
-import Navbar from '../components/Navbar'
+import Meta from '../components/Meta'
 
 
 function Stock() {
     return (
     <div>
-        <Navbar></Navbar>
+        <Meta />
         <p>This is the stock demo page</p>
     </div>
     );

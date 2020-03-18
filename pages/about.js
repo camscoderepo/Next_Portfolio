@@ -1,9 +1,9 @@
-import Navbar from '../components/Navbar'
+import Meta from '../components/Meta'
 
 function About() {
     return (
     <div>
-        <Navbar></Navbar>
+        <Meta />
         <p>This is the about page</p>
     </div>
     );
