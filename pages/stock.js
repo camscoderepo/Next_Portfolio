@@ -1,10 +1,10 @@
-import Meta from '../components/Meta'
+import Meta from '../components/Meta';
 
-
-function Stock() {
+function Stock() { 
     return (
     <div>
         <Meta />
+        
         <p>This is the stock demo page</p>
     </div>
     );

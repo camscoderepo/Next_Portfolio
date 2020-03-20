@@ -6,9 +6,11 @@ import { css } from "@emotion/core";
 import { RingLoader } from "react-spinners";
 import Meta from "../components/Meta";
 import Config from "../config/personal";
-import Navbar from '../components/Navbar';
 
- const Personal = ({data}) => {
+
+
+
+const Personal = ({data}) => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {

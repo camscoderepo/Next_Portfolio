@@ -1,8 +1,17 @@
 import React, { useState } from 'react'
 import Meta from '../components/Meta'
+import Avatar from '@material-ui/core/Avatar';
 import { Input } from '@material-ui/core'
-import { TextField } from '@material-ui/core/'
 import { Button } from '@material-ui/core'
+import CssBaseline from '@material-ui/core/CssBaseline';
+import TextField from '@material-ui/core/TextField';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
+import FormControl from '@material-ui/core/FormControl';
+
+
+
+
 
  export default () => {
     const [status, setStatus] = useState({
@@ -12,6 +21,9 @@ import { Button } from '@material-ui/core'
       })
     
       const [inputs, setInputs] = useState({
+        firstName: '',
+        lastName: '',
+        company: '',
         email: '',
         message: ''
       })
@@ -24,8 +36,11 @@ import { Button } from '@material-ui/core'
             info: { error: false, msg: msg }
           })
           setInputs({
-            email: '',
-            message: ''
+            firstName: '',
+            lastName: '',
+            company: '',
+            email: '', //
+            message: ''//
           })
         } else {
           setStatus({
@@ -62,47 +77,87 @@ import { Button } from '@material-ui/core'
       }
       return (
         <main>
+        <CssBaseline />
         <Meta />
+        <Typography component="h1" align='center' variant="h4">
+            Contact Me
+        </Typography>
         <form onSubmit={handleOnSubmit}>
-            <div>
-              <label htmlFor="name">Name</label>
-              <Input
-                id="name"
-                type="name"
-                onChange={handleOnChange}
-                required
-                value={inputs.name}
-              />
+            <div className="form">
+            <FormControl fullWidth>
+                <TextField
+                    variant="outlined"
+                    id="firstName"
+                    type="name"
+                    label="First Name"
+                    onChange={handleOnChange}
+                    required
+                    value={inputs.firstName}
+                />
+            </FormControl>
             </div>
-            <div>
-              <label htmlFor="email">Email</label>
-              <Input
-                id="email"
-                type="email"
-                onChange={handleOnChange}
-                required
-                value={inputs.email}
-              />
+            <div className="form">
+            <FormControl fullWidth>
+                <TextField
+                    variant="outlined"
+                    id="lastName"
+                    type="name"
+                    label="Last Name"
+                    onChange={handleOnChange}
+                    required
+                    value={inputs.lastName}
+                />
+            </FormControl>
             </div>
-            <div>
-              <label htmlFor="message">Message</label>
-              <TextField
-                id="message"
-                label="Multiline"
-                multiline
-                rows="4"
-                onChange={handleOnChange}
-                required
-                value={inputs.message}
-              />
+            <div className="form">
+            <FormControl fullWidth>
+                <TextField
+                    variant="outlined"
+                    id="company"
+                    type="name"
+                    label="Company Name"
+                    onChange={handleOnChange}
+                    value={inputs.company}
+                />
+            </FormControl>
             </div>
-            <Button variant="contained" color="primary" type="submit" disabled={status.submitting}>
-              {!status.submitting
-                ? !status.submitted
-                  ? 'Submit'
-                  : 'Submitted'
-                : 'Submitting...'}
-            </Button>
+
+            <div className="form">
+            <FormControl fullWidth>
+                <TextField
+                    variant="outlined"
+                    id="email"
+                    type="email"
+                    label="Email"
+                    onChange={handleOnChange}
+                    required
+                    value={inputs.email}
+                />
+            </FormControl>
+            </div>
+            <div className="form">
+            <FormControl fullWidth>
+                <TextField
+                    variant="outlined"
+                    id="message"
+                    label="Message"
+                    multiline
+                    rows="4"
+                    onChange={handleOnChange}
+                    required
+                    value={inputs.message}
+                />
+            </FormControl>
+            </div>
+            <div className="submit">
+                <Button variant="contained" color="primary" type="submit" disabled={status.submitting}>
+                {!status.submitting
+                    ? !status.submitted
+                    ? 'Submit'
+                    : 'Submitted'
+                    : 'Submitting...'}
+                </Button>
+            </div>
         </form>
         {status.info.error && (
           <div className="error">Error: {status.info.msg}</div>
@@ -110,6 +165,15 @@ import { Button } from '@material-ui/core'
         {!status.info.error && status.info.msg && (
           <div className="success">{status.info.msg}</div>
         )}
+        <style jsx>{`
+            .form {
+                padding-bottom: 50px;
+            }
+            .submit {
+                
+            }
+        `}</style>
       </main>
+     
     )
  } 

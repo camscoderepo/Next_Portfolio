@@ -1,25 +1,24 @@
 import React, { useState } from 'react'
-import styled from '@emotion/styled'
-import { css } from '@emotion/core'
-import { Container } from '@material-ui/core'
 import Form from '../components/Form'
+import Container from '@material-ui/core/Container'
+import { makeStyles } from '@material-ui/core/styles';
 
-const border = props =>
-  css`
-    border: 5px solid black;
-  `
-
-const Box = styled.div`
-  ${border};
-`
+const useStyles = makeStyles(theme => ({
+  form: {
+    width: '100%', // Fix IE 11 issue
+    marginTop: theme.spacing(1),
+    padding: '0 30px'
+  }
+}))
 
 
 export default () => {
-  
-
+  const classes = useStyles();
   return (
-     <div >
-      <Form></Form>
-     </div>
+    <>
+     <Container component="main" align="center">
+      <Form className={classes.form}></Form>
+     </Container>
+     </>
   )
 }
