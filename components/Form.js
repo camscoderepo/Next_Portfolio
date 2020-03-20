@@ -79,9 +79,11 @@ import FormControl from '@material-ui/core/FormControl';
         <main>
         <CssBaseline />
         <Meta />
-        <Typography component="h1" align='center' variant="h4">
-            Contact Me
-        </Typography>
+        <div className="title">
+            <Typography  component="h1" align='center' variant="h4">
+                Contact Me
+            </Typography>
+        </div>
         <form onSubmit={handleOnSubmit}>
             <div className="form">
             <FormControl fullWidth>
@@ -169,8 +171,9 @@ import FormControl from '@material-ui/core/FormControl';
             .form {
                 padding-bottom: 50px;
             }
-            .submit {
-                
+            .title {
+                padding-top: 50px;
+                padding-bottom:50px;
             }
         `}</style>
       </main>
