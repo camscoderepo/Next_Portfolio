@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Fade from "react-reveal/Fade";
 import RcIf from 'rc-if';
-
+// import Tags from './Tags'
 
 export default ({ data }) => {
     return(
@@ -17,6 +17,7 @@ export default ({ data }) => {
                   <p>{i.description}</p>
                 </div>
                 <div style={{ marginBottom: "70px" }}>
+                  {/* <Tags name={i.name}></Tags> */}
                 </div>
                 <div className="buttons" style={{ marginBottom: "20px" }}>
                   <span>

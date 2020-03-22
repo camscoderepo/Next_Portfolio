@@ -4,7 +4,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton'
 import Button from '@material-ui/core/Button';
 
-
 function Navbar() {
     return (
       <React.Fragment>

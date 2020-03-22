@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Meta from '../components/Meta'
 import Avatar from '@material-ui/core/Avatar';
 import { Input } from '@material-ui/core'
 import { Button } from '@material-ui/core'
@@ -78,7 +77,6 @@ import FormControl from '@material-ui/core/FormControl';
       return (
         <main>
         <CssBaseline />
-        <Meta />
         <div className="title">
             <Typography  component="h1" align='center' variant="h4">
                 Contact Me

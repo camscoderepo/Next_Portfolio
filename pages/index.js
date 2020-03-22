@@ -1,9 +1,10 @@
-import Meta from '../components/Meta';
-
+import React, {useState, useEffect} from 'react';
+import Navbar from '../components/Navbar'
 function Index() {
     return (
         <div>
-            <Meta />
+            <Navbar />
+            <p>Hello Next</p>
         </div>
     );
 }  

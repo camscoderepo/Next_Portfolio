@@ -1,12 +1,12 @@
-import Meta from '../components/Meta'
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
 import Box from '@material-ui/core/Box'
+import Navbar from '../components/Navbar'
 
 function About() {
     return (
     <div>
-        <Meta />
+        <Navbar />
         <Container className="container" align="center">
             <Box p={1}>
                 <Typography variant="h2">

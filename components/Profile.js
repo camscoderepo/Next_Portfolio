@@ -42,7 +42,7 @@ export default ({
 
           <div className="tech-stack">
             {TECH_STACK.map(i => (
-              <p>
+              <p key={`${i.id}`}>
                 <span className="dot"></span> {i}
               </p>
             ))}
@@ -50,7 +50,7 @@ export default ({
         </div>
         <ul className="social">
           {SOCIAL_MEDIA.map(i => (
-            <li>
+            <li key={`${i.id}`}>
               <a href={checkUrls(i)} target="blank">
                 <i className={`fab fa-${i.name}`}></i>
               </a>

@@ -1,24 +1,18 @@
 import React, { useState } from 'react'
 import Form from '../components/Form'
 import Container from '@material-ui/core/Container'
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles(theme => ({
-  form: {
-    width: '100%', // Fix IE 11 issue
-    marginTop: theme.spacing(1),
-    padding: '0 30px'
-  }
-}))
+import Navbar from '../components/Navbar'
 
 
-export default () => {
-  const classes = useStyles();
+const Contact = () => {
   return (
     <>
+    <Navbar />
      <Container component="main" align="center">
-      <Form className={classes.form}></Form>
+      <Form></Form>
      </Container>
      </>
   )
 }
+
+export default Contact;
