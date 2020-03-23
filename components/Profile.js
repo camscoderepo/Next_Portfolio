@@ -39,18 +39,17 @@ export default ({
             {`${LOCATION.state}, ${LOCATION.country}`}
           </p>
           <p>{ROLE}</p>
-
+        </div>
           <div className="tech-stack">
-            {TECH_STACK.map(i => (
-              <p key={`${i.id}`}>
+            {TECH_STACK.map(i=> (
+              <p key={`key-${i}`}>
                 <span className="dot"></span> {i}
               </p>
             ))}
           </div>
-        </div>
         <ul className="social">
-          {SOCIAL_MEDIA.map(i => (
-            <li key={`${i.id}`}>
+          {SOCIAL_MEDIA.map((i, index) => (
+            <li key={`key-${index}`}>
               <a href={checkUrls(i)} target="blank">
                 <i className={`fab fa-${i.name}`}></i>
               </a>

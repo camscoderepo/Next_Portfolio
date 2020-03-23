@@ -35,7 +35,7 @@ const Personal = ({data}) => {
             <Navbar></Navbar>
             <div className="container" style={{ overflow: "hidden" }}>
                 <Profile Config={Config} />
-                <Projects data={data} />
+                <Projects data={data}  />
             </div>
             <style jsx>
                 {`
