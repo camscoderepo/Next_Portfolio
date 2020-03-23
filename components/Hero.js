@@ -9,6 +9,7 @@ import { makeStyles } from '@material-ui/core';
 const useStyles = makeStyles({
     media: {
         height: 500,
+        
       }
 })
 
@@ -19,7 +20,7 @@ function Hero() {
         <CardActionArea>
             <CardMedia
                 className={classes.media}
-                image="http://baconmockup.com/800/650"
+                image="http://baconmockup.com/900/650"
                 title="dummyimage"
             />
         </CardActionArea>
