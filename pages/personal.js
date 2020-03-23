@@ -40,6 +40,7 @@ const Personal = ({data}) => {
             <style jsx>
                 {`
             .container {
+                display: flex;
                 flex-direction: row;
                 padding: 20px;
                 overflow-x: hidden;

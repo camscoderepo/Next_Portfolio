@@ -105,7 +105,7 @@ export default ({
         }
         .social > li {
           display: inline-block;
-          margin-right: 10px;
+          margin-right: 5px;
           background: #0080edbd;
           padding: 8px 10px;
           border-radius: 50%;
