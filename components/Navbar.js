@@ -20,6 +20,7 @@ const useStyles = makeStyles(theme => ({
 }))
 
 
+
 function Navbar() {
     const classes = useStyles();
     return (
@@ -30,10 +31,13 @@ function Navbar() {
               <IconButton edge="start" className={classes.menuButton} color="inherit" ariar-label="menu">
                    <MenuIcon /> 
               </IconButton>
-              <Button href="/" color="inherit">Home</Button>
-              <Button href="/about" color="inherit">About</Button>
-              <Button href="/personal" color="inherit">Github</Button>
-              <Button href="/contact" color="inherit">Contact</Button>
+              <div>
+                <Button href="/" color="inherit">Roman's Creations</Button>
+                <Button href="/about" color="inherit">About</Button>
+                <Button href="/personal" color="inherit">Github</Button>
+                <Button href="/contact" color="inherit">Contact</Button>
+              </div>
+             
               </>
         }</Toolbar>
         </AppBar>
