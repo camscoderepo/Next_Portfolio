@@ -3,10 +3,10 @@ import Container from '@material-ui/core/Container'
 import Box from '@material-ui/core/Box'
 import Navbar from '../components/Navbar'
 
-function About() {
+const About = () => {
     return (
-    <div>
-        <Navbar />
+    <>
+    <Navbar />
         <Container className="container" align="center">
             <Box p={1}>
                 <Typography variant="h2">
@@ -60,7 +60,7 @@ function About() {
             }
         `}
     </style>
-    </div>
+    </>
     );
 }
 
