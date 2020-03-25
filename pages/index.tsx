@@ -5,7 +5,7 @@ import { NextPage } from 'next';
 
 
 const Home: NextPage<{}> = () => (
-    <div><Navbar /><Hero /></div>
+    <><Navbar /><Hero /></>
 );
 
 
