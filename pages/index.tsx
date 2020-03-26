@@ -2,11 +2,11 @@ import React, {useState, useEffect} from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import { NextPage } from 'next';
-import ProductHowItWorks from '../components/HowItWorks'
-import ProductValues from '../components/Values'
+import Image from '../components/Image'
+import TextInfo from '../components/TextInfo'
 
 const Home: NextPage<{}> = () => (
-    <><Navbar /><Hero /><ProductHowItWorks /><ProductValues /></>
+    <><Navbar /><Hero /><Image /><TextInfo /></>
 );
 
 

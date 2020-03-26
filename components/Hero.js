@@ -1,14 +1,13 @@
 import React from 'react';
 import Card from '@material-ui/core/Card';
+import Paper from '@material-ui/core/Paper';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({
     media: {
-        height: 500,
+        height: 600,
         
       }
 })
@@ -16,15 +15,15 @@ const useStyles = makeStyles({
 function Hero() {
     const classes = useStyles();
     return (
-        <Card>
+        <Paper>
         <CardActionArea>
             <CardMedia
                 className={classes.media}
-                image="http://baconmockup.com/900/650"
+                image="http://baconmockup.com/6000/1550"
                 title="dummyimage"
             />
         </CardActionArea>
-        </Card>
+        </Paper>
     )
 }
 
