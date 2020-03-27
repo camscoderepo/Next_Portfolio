@@ -147,9 +147,8 @@ export default function Navbar() {
         <Divider />
         <List>
           {["about", "personal", "contact" ].map(text => (
-            <ListItemLink href={text}>
-              <ListItem key={text}>
-                
+            <ListItemLink href={text} key={text}>
+              <ListItem >
                 <ListItemText primary={text} />
               </ListItem>
             </ListItemLink>
