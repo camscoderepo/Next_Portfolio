@@ -5,8 +5,6 @@ import { makeStyles, Theme, createStyles, StylesProvider } from '@material-ui/co
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         heading: {
-        display: 'flex',
-        flexDirection: 'row'
     }
  })
 );

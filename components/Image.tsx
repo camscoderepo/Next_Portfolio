@@ -7,7 +7,7 @@ import Paper from '@material-ui/core/Paper';
 const useStyles = makeStyles((theme: Theme) => 
   createStyles({
     root: {
-      maxWidth: 345,
+      maxWidth: 445,
     },
     media: {
       height: 400,
@@ -20,11 +20,11 @@ export default function Image() {
   const classes = useStyles();
   return (
     <Paper elevation={6} className={classes.root}>
-    <CardMedia 
-    className={classes.media}
-    image="http://baconmockup.com/800/650"
-    title="Paella dish"
-    />
+      <CardMedia 
+      className={classes.media}
+      image="http://baconmockup.com/800/650"
+      title="Paella dish"
+      />
     </Paper>
   );
 }
