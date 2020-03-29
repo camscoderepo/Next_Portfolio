@@ -7,12 +7,18 @@ import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import FormControl from '@material-ui/core/FormControl';
+import Container from '@material-ui/core/Container';
+import { makeStyles } from '@material-ui/core/styles';
 
-
-
+const useStyles = makeStyles ((theme) => ({
+  submit: {
+    margin: theme.spacing(3,0,2)
+  }
+}))
 
 
  export default () => {
+   const classes = useStyles();
     const [status, setStatus] = useState({
         submitted: false,
         submitting: false,
@@ -75,7 +81,7 @@ import FormControl from '@material-ui/core/FormControl';
         handleResponse(res.status, text)
       }
       return (
-        <main>
+        <Container component="main" maxWidth="xs">
         <CssBaseline />
         <div className="title">
             <Typography  component="h1" align='center' variant="h4">
@@ -149,7 +155,7 @@ import FormControl from '@material-ui/core/FormControl';
                 />
             </FormControl>
             </div>
-            <div className="submit">
+            <div className={classes.submit}>
                 <Button variant="contained" color="primary" type="submit" disabled={status.submitting}>
                 {!status.submitting
                     ? !status.submitted
@@ -174,7 +180,7 @@ import FormControl from '@material-ui/core/FormControl';
                 padding-bottom:50px;
             }
         `}</style>
-      </main>
+      </Container>
      
     )
  } 
