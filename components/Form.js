@@ -9,10 +9,11 @@ import Typography from '@material-ui/core/Typography';
 import FormControl from '@material-ui/core/FormControl';
 import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles ((theme) => ({
   submit: {
-    margin: theme.spacing(3,0,2)
+    margin: theme.spacing(1,0,8)
   }
 }))
 
@@ -43,9 +44,8 @@ const useStyles = makeStyles ((theme) => ({
           setInputs({
             firstName: '',
             lastName: '',
-            company: '',
-            email: '', //
-            message: ''//
+            email: '', 
+            message: ''
           })
         } else {
           setStatus({
@@ -81,6 +81,7 @@ const useStyles = makeStyles ((theme) => ({
         handleResponse(res.status, text)
       }
       return (
+        
         <Container component="main" maxWidth="xs">
         <CssBaseline />
         <div className="title">
@@ -119,19 +120,6 @@ const useStyles = makeStyles ((theme) => ({
             <FormControl fullWidth>
                 <TextField
                     variant="outlined"
-                    id="company"
-                    type="name"
-                    label="Company Name"
-                    onChange={handleOnChange}
-                    value={inputs.company}
-                />
-            </FormControl>
-            </div>
-
-            <div className="form">
-            <FormControl fullWidth>
-                <TextField
-                    variant="outlined"
                     id="email"
                     type="email"
                     label="Email"
@@ -165,6 +153,7 @@ const useStyles = makeStyles ((theme) => ({
                 </Button>
             </div>
         </form>
+        
         {status.info.error && (
           <div className="error">Error: {status.info.msg}</div>
         )}
@@ -181,6 +170,6 @@ const useStyles = makeStyles ((theme) => ({
             }
         `}</style>
       </Container>
-     
+      
     )
  } 

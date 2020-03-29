@@ -23,7 +23,7 @@ const Home: NextPage<{}> = () => (
         <CssBaseline />
         <Navbar />
         <Hero />
-        <Description />
+        {/* <Description /> */}
         <Form />
         <Footer />
     </>
