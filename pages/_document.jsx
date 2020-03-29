@@ -16,7 +16,7 @@ class MyDocument extends Document {
           <meta charSet="UTF-8" />
           <meta
             name="viewport"
-            content="width=device-width, initial-scale=1.0"
+            content="minimum-scale=1, width=device-width, initial-scale=1.0"
             key="viewport"
           />
           <link

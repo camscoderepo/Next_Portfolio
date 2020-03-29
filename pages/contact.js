@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Form from '../components/Form'
 import Container from '@material-ui/core/Container'
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Layouts/Navbar'
 
 
 const Contact = () => {

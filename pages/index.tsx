@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Layouts/Navbar';
 import Hero from '../components/Hero';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import { NextPage } from 'next';
 import Description from '../components/Description';
-import Container from '@material-ui/core/Container';
 import { CssBaseline } from '@material-ui/core';
+import Form from '../components/Form';
 
 const useStyles = makeStyles((theme: Theme ) => 
     createStyles({
@@ -17,12 +17,13 @@ const useStyles = makeStyles((theme: Theme ) =>
 
 
 const Home: NextPage<{}> = () => (
-    <Container disableGutters maxWidth="xl">
+    <>
         <CssBaseline />
         <Navbar />
         <Hero />
         <Description />
-    </Container>
+        <Form />
+    </>
 );
 
 
