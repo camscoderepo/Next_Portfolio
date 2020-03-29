@@ -156,7 +156,7 @@ const useStyles = makeStyles ((theme) => ({
             </FormControl>
             </div>
             <div className={classes.submit}>
-                <Button variant="contained" color="primary" type="submit" disabled={status.submitting}>
+                <Button variant="contained" fullWidth color="primary" type="submit" disabled={status.submitting}>
                 {!status.submitting
                     ? !status.submitted
                     ? 'Submit'
