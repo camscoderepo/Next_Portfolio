@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
                     <Typography component="h1" variant="h5">
                         About Us
                     </Typography>
-                    <form className={classes.form} noValidate>
+                    <div className={classes.form}>
                         <Button
                             type="submit"
                             fullWidth
@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
                         >
                         Sign In
                         </Button>
-                    </form>
+                    </div>
                 </div>
              </Grid>
           </Grid>
