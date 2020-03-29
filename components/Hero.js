@@ -19,7 +19,7 @@ function Hero() {
         <CardActionArea>
             <CardMedia
                 className={classes.media}
-                image="http://baconmockup.com/6000/1550"
+                image="https://source.unsplash.com/random"
                 title="dummyimage"
             />
         </CardActionArea>
