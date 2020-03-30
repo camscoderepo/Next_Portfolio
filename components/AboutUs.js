@@ -10,8 +10,9 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      height: '50vh',
-      paddingTop: '100px'
+      height: '75vh',
+      paddingTop: '100px',
+      paddingLeft: '10px'
     },
     image: {
       backgroundImage: 'url(https://source.unsplash.com/random)',
@@ -40,19 +41,22 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-  export default function About() {
+  export default function AboutUs() {
       const classes = useStyles();
       return (
           <Grid container component="main" className={classes.root}>
               <CssBaseline />
              <Grid item xs={false} sm={4} md={7} className={classes.image} />
-             <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+             <Grid item xs={12} sm={8} md={5} square>
                 <div className={classes.paper}>
                     <Avatar className={classes.avatar}>
             
                     </Avatar>
                     <Typography component="h1" variant="h5">
                         About Us
+                    </Typography>
+                    <Typography>
+
                     </Typography>
                     <div className={classes.form}>
                         <Button

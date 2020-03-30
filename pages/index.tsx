@@ -4,7 +4,7 @@ import Hero from '../components/Hero';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import { NextPage } from 'next';
 import { CssBaseline } from '@material-ui/core';
-import About from '../components/About';
+import AboutUs from '../components/AboutUs';
 import ProjectAlbum from '../components/ProjectAlbum';
 import Form from '../components/Form';
 import Footer from '../components/Layouts/Footer';
@@ -24,8 +24,8 @@ const Home: NextPage<{}> = () => (
         <CssBaseline />
         <Navbar />
         <Hero />
-        <About />
-        <ProjectAlbum />
+        <AboutUs />
+        {/* <ProjectAlbum /> */}
         <Form />
         <Footer />
     </>
