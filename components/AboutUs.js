@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
       
     },
     paper: {
-      margin: theme.spacing(8, 4),
+      margin: theme.spacing(1, 4),
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
                     <Typography component="h1" variant="h5">
                         About Us
                     </Typography>
-                    <div style={{overflow: 'hidden', textOverflow: "ellipsis", width: '90%'}}>
+                    <div style={{overflow: 'hidden', width: '90%'}}>
                     <Typography variant="body1">
                         This is just random gibberish. It is the best kind of gibberish you can find right now! 
                         I love speaking tons of gibberish!!! Wubba lubba dubb dubb Belch! Haha Ricky tacky doobly bop! Slip slap my balls! defiejieeja
@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
                     </Typography>
                     </div>
                    
-                    <div className={classes.form}>
+                    <div>
                         <Button
                             type="submit"
                             fullWidth
