@@ -56,16 +56,16 @@ export default function AboutUs() {
                   <Typography component="h1" variant="h5">
                       About Us
                   </Typography>
-                  <div style={{overflow: 'hidden', width: '90%'}}>
+                  <div style={{overflow: 'hidden', textOveflow: 'ellipsis', width: '90%'}}>
                   <Typography variant="body1">
                       This is just random gibberish. It is the best kind of gibberish you can find right now! 
-                      I love speaking tons of gibberish!!! Wubba lubba dubb dubb Belch! Haha Ricky tacky doobly bop! Slip slap my balls! defiejieeja
+                      I love speaking tons of gibberish!!! Wubba lubba dubb dubb Belch! Haha Ricky tacky doobly bop!defiejieeja
                       ajkfalkefkjafkjlkfljkajkflkjael;kj;kjk;jasjkllfkjlkejajklfkjeafjaej jafljaljejljkalkjlejkleklj;jekjlajklekjlajk;lkjl;kljaklsklj
                       eajsklfklalkjkjlekljajkljkaefajkkljakjlssasasaskakjskljfjklakljelkjajkesljljkelkjafljkakjlfljkljk jklfjkekfkjlaelkjfalkjlfkja
                       aklflkljakljekjlfeklakjlfkjlklfkjafkjkajkklfkljaljjkellkj;jlkfakjlejklakjlfejklajlkfkljklfjkekjljfkkljakjlfjklkjlakjlfkjlakljkl
                       aelfjjkallkfajklekfjlajklkjlkkjlajkfklflk;ealkefklj;alkjfjkl;alkj;ljkf;a;ljkfjlk;ajl;kfkjal;jekjfjkljflkaljkefjkjalkljajlk;jkll
                       This is just random gibberish. It is the best kind of gibberish you can find right now! 
-                      I love speaking tons of gibberish!!! Wubba lubba dubb dubb Belch! Haha Ricky tacky doobly bop! Slip slap my balls! defiejieeja
+                      I love speaking tons of gibberish!!! Wubba lubba dubb dubb Belch! Haha Ricky tacky doobly bop! defiejieeja
                       ajkfalkefkjafkjlkfljkajkflkjael;kj;kjk;jasjkllfkjlkejajklfkjeafjaej jafljaljejljkalkjlejkleklj;jekjlajklekjlajk;lkjl;kljaklsklj
                       eajsklfklalkjkjlekljajkljkaefajkkljakjlssasasaskakjskljfjklakljelkjajkesljljkelkjafljkakjlfljkljk jklfjkekfkjlaelkjfalkjlfkja
                       aklflkljakljekjlfeklakjlfkjlklfkjafkjkajkklfkljaljjkellkj;jlkfakjlejklakjlfejklajlkfkljklfjkekjljfkkljakjlfjklkjlakjlfkjlakljkl
