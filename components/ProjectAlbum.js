@@ -14,7 +14,7 @@ import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        marginTop: theme.spacing(2)
+        marginTop: theme.spacing(30)
     },
     icon: {
       marginRight: theme.spacing(2),

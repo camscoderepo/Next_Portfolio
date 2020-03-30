@@ -14,6 +14,13 @@ import Paper from '@material-ui/core/Paper';
 const useStyles = makeStyles ((theme) => ({
   submit: {
     margin: theme.spacing(1,0,8)
+  },
+  form: {
+    paddingBottom: theme.spacing(6)
+  },
+  title: {
+    paddingTop: theme.spacing(6),
+    paddingBottom: theme.spacing(6)
   }
 }))
 
@@ -84,13 +91,13 @@ const useStyles = makeStyles ((theme) => ({
         
         <Container component="main" maxWidth="xs">
         <CssBaseline />
-        <div className="title">
+        <div className={classes.title}>
             <Typography  component="h1" align='center' variant="h4">
                 Contact Me
             </Typography>
         </div>
         <form onSubmit={handleOnSubmit}>
-            <div className="form">
+            <div className={classes.form}>
             <FormControl fullWidth>
                 <TextField
                     variant="outlined"
@@ -103,7 +110,7 @@ const useStyles = makeStyles ((theme) => ({
                 />
             </FormControl>
             </div>
-            <div className="form">
+            <div className={classes.form}>
             <FormControl fullWidth>
                 <TextField
                     variant="outlined"
@@ -116,7 +123,7 @@ const useStyles = makeStyles ((theme) => ({
                 />
             </FormControl>
             </div>
-            <div className="form">
+            <div className={classes.form}>
             <FormControl fullWidth>
                 <TextField
                     variant="outlined"
@@ -129,7 +136,7 @@ const useStyles = makeStyles ((theme) => ({
                 />
             </FormControl>
             </div>
-            <div className="form">
+            <div className={classes.form}>
             <FormControl fullWidth>
                 <TextField
                     variant="outlined"
@@ -160,15 +167,6 @@ const useStyles = makeStyles ((theme) => ({
         {!status.info.error && status.info.msg && (
           <div className="success">{status.info.msg}</div>
         )}
-        <style jsx>{`
-            .form {
-                padding-bottom: 50px;
-            }
-            .title {
-                padding-top: 50px;
-                padding-bottom:50px;
-            }
-        `}</style>
       </Container>
       
     )
