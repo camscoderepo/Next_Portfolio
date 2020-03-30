@@ -49,15 +49,23 @@ const useStyles = makeStyles((theme) => ({
              <Grid item xs={false} sm={4} md={7} className={classes.image} />
              <Grid item xs={12} sm={8} md={5} square="true">
                 <div className={classes.paper}>
-                    <Avatar className={classes.avatar}>
+                    {/* <Avatar className={classes.avatar}>
             
-                    </Avatar>
+                    </Avatar> */}
                     <Typography component="h1" variant="h5">
                         About Us
                     </Typography>
-                    <Typography>
-
+                    <div style={{overflow: 'hidden', textOverflow: "ellipsis", width: '90%'}}>
+                    <Typography variant="body1">
+                        This is just random gibberish. It is the best kind of gibberish you can find right now! 
+                        I love speaking tons of gibberish!!! Wubba lubba dubb dubb Belch! Haha Ricky tacky doobly bop! Slip slap my balls! defiejieeja
+                        ajkfalkefkjafkjlkfljkajkflkjael;kj;kjk;jasjkllfkjlkejajklfkjeafjaej jafljaljejljkalkjlejkleklj;jekjlajklekjlajk;lkjl;kljaklsklj
+                        eajsklfklalkjkjlekljajkljkaefajkkljakjlssasasaskakjskljfjklakljelkjajkesljljkelkjafljkakjlfljkljk jklfjkekfkjlaelkjfalkjlfkja
+                        aklflkljakljekjlfeklakjlfkjlklfkjafkjkajkklfkljaljjkellkj;jlkfakjlejklakjlfejklajlkfkljklfjkekjljfkkljakjlfjklkjlakjlfkjlakljkl
+                        aelfjjkallkfajklekfjlajklkjlkkjlajkfklflk;ealkefklj;alkjfjkl;alkj;ljkf;a;ljkfjlk;ajl;kfkjal;jekjfjkljflkaljkefjkjalkljajlk;jkll
                     </Typography>
+                    </div>
+                   
                     <div className={classes.form}>
                         <Button
                             type="submit"
@@ -66,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
                             color="primary"
                             className={classes.submit}
                         >
-                        Sign In
+                        Learn more
                         </Button>
                     </div>
                 </div>
