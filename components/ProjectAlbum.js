@@ -13,6 +13,9 @@ import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles((theme) => ({
+    root: {
+        marginTop: theme.spacing(2)
+    },
     icon: {
       marginRight: theme.spacing(2),
     },
@@ -47,7 +50,7 @@ export default function Album() {
 
     return (
     <>
-        <main>
+        <main className={classes.root}>
             <CssBaseline />
              {/* Hero unit */}
         <div className={classes.heroContent}>
