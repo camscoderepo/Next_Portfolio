@@ -7,7 +7,6 @@ import { CssBaseline } from '@material-ui/core';
 import AboutUs from '../components/AboutUs';
 import ProjectAlbum from '../components/ProjectAlbum';
 import Form from '../components/Form';
-import Footer from '../components/Layouts/Footer';
 
 
 const useStyles = makeStyles((theme: Theme ) => 
@@ -22,12 +21,11 @@ const useStyles = makeStyles((theme: Theme ) =>
 const Home: NextPage<{}> = () => (
     <>
         <CssBaseline />
-        <Navbar />
+        {/* <Navbar /> */}
         <Hero />
         <AboutUs />
         <ProjectAlbum />
         <Form />
-        <Footer />
     </>
 );
 

@@ -9,7 +9,7 @@ const theme = responsiveFontSizes(createMuiTheme())
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <meta name="theme-color" content={theme.palette.primary.main} />
           <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' />

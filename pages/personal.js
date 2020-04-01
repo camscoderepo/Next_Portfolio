@@ -3,7 +3,7 @@ import fetch from "isomorphic-unfetch";
 import Profile from "../components/Profile";
 import Projects from "../components/Projects";
 import { css } from "@emotion/core";
-import { RingLoader } from "react-spinners";
+
 import Config from "../config/personal";
 import Navbar from '../components/Layouts/Navbar';
 
