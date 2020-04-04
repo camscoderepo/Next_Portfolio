@@ -57,8 +57,22 @@ export default function AboutUs() {
                       About Us
                   </Typography>
                   <div style={{overflow: 'hidden', textOveflow: 'ellipsis', width: '50%'}}>
-                  <Typography variant="heading">
-                     This is a paragraph to describe what I am doing and want to accomplish. I don't know what else to put here to be honest. I hope everyone out there is having a good time.
+                  <Typography display="inline" variant="p">
+                     This is a paragraph to describe what I am doing and want to accomplish. 
+                     I don't know what else to put here to be honest. 
+                     I hope everyone out there is having a good time.
+                     This is a paragraph to describe what I am doing and want to accomplish. 
+                     I don't know what else to put here to be honest. 
+                     I hope everyone out there is having a good time.
+                     This is a paragraph to describe what I am doing and want to accomplish. 
+                     I don't know what else to put here to be honest. 
+                     I hope everyone out there is having a good time.
+                     This is a paragraph to describe what I am doing and want to accomplish. 
+                     I don't know what else to put here to be honest. 
+                     I hope everyone out there is having a good time.
+                     This is a paragraph to describe what I am doing and want to accomplish. 
+                     I don't know what else to put here to be honest. 
+                     I hope everyone out there is having a good time.
                   </Typography>
                   </div>
                   

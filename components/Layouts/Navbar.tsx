@@ -18,13 +18,14 @@ import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import ListItem, { ListItemProps } from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
-import MailIcon from "@material-ui/icons/Mail";
 import Button from '@material-ui/core/Button';
+import useScrollTrigger from "@material-ui/core/useScrollTrigger";
+import { FormHelperText } from "@material-ui/core";
+
 
 const drawerWidth = 240;
+
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -35,7 +36,8 @@ const useStyles = makeStyles((theme: Theme) =>
       transition: theme.transitions.create(["margin", "width"], {
         easing: theme.transitions.easing.sharp,
         duration: theme.transitions.duration.leavingScreen
-      })
+      }),
+      
     },
     appBarShift: {
       width: `calc(100% - ${drawerWidth}px)`,
@@ -50,6 +52,9 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     hide: {
       display: "none"
+    },
+    show: {
+      display: "flex"
     },
     drawer: {
       width: drawerWidth,
@@ -92,6 +97,7 @@ function ListItemLink(props: ListItemProps<'a', { button?: true }>) {
 export default function Navbar() {
   const classes = useStyles();
   const theme = useTheme();
+  const trigger = useScrollTrigger();
   const [open, setOpen] = React.useState(false);
 
   const handleDrawerOpen = () => {
@@ -107,8 +113,9 @@ export default function Navbar() {
       <CssBaseline />
       <AppBar
         position="fixed"
-        className={clsx(classes.appBar, {
-          [classes.appBarShift]: open
+        className={clsx(classes.appBar, trigger ? classes.show : classes.hide, {
+          [classes.appBarShift]: open,
+          
         })}
       >
         <Toolbar>

@@ -20,7 +20,6 @@ const useStyles = makeStyles((theme: Theme ) =>
 
 const Home: NextPage<{}> = () => (
     <>
-        <CssBaseline />
         {/* <Navbar /> */}
         <Hero />
         <AboutUs />
