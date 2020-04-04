@@ -36,6 +36,9 @@ const useStyles = makeStyles((theme) => ({
       width: '100%', // Fix IE 11 issue.
       marginTop: theme.spacing(1),
     },
+    paragraph: {
+      fontSize: '20px'
+    },
     submit: {
       margin: theme.spacing(3, 0, 2),
     },
@@ -57,7 +60,7 @@ export default function AboutUs() {
                       About Us
                   </Typography>
                   <div style={{overflow: 'hidden', textOveflow: 'ellipsis', width: '50%'}}>
-                  <Typography display="inline" variant="p">
+                  <p className={classes.paragraph}>
                      This is a paragraph to describe what I am doing and want to accomplish. 
                      I don't know what else to put here to be honest. 
                      I hope everyone out there is having a good time.
@@ -73,7 +76,7 @@ export default function AboutUs() {
                      This is a paragraph to describe what I am doing and want to accomplish. 
                      I don't know what else to put here to be honest. 
                      I hope everyone out there is having a good time.
-                  </Typography>
+                  </p>
                   </div>
                   
                   <div>
