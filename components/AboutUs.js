@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
       
     },
     paper: {
-      margin: theme.spacing(1, 4),
+      margin: theme.spacing(4, 6),
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
@@ -56,20 +56,9 @@ export default function AboutUs() {
                   <Typography component="h1" variant="h5">
                       About Us
                   </Typography>
-                  <div style={{overflow: 'hidden', textOveflow: 'ellipsis', width: '90%'}}>
-                  <Typography variant="body1">
-                      This is just random gibberish. It is the best kind of gibberish you can find right now! 
-                      I love speaking tons of gibberish!!! Wubba lubba dubb dubb Belch! Haha Ricky tacky doobly bop!defiejieeja
-                      ajkfalkefkjafkjlkfljkajkflkjael;kj;kjk;jasjkllfkjlkejajklfkjeafjaej jafljaljejljkalkjlejkleklj;jekjlajklekjlajk;lkjl;kljaklsklj
-                      eajsklfklalkjkjlekljajkljkaefajkkljakjlssasasaskakjskljfjklakljelkjajkesljljkelkjafljkakjlfljkljk jklfjkekfkjlaelkjfalkjlfkja
-                      aklflkljakljekjlfeklakjlfkjlklfkjafkjkajkklfkljaljjkellkj;jlkfakjlejklakjlfejklajlkfkljklfjkekjljfkkljakjlfjklkjlakjlfkjlakljkl
-                      aelfjjkallkfajklekfjlajklkjlkkjlajkfklflk;ealkefklj;alkjfjkl;alkj;ljkf;a;ljkfjlk;ajl;kfkjal;jekjfjkljflkaljkefjkjalkljajlk;jkll
-                      This is just random gibberish. It is the best kind of gibberish you can find right now! 
-                      I love speaking tons of gibberish!!! Wubba lubba dubb dubb Belch! Haha Ricky tacky doobly bop! defiejieeja
-                      ajkfalkefkjafkjlkfljkajkflkjael;kj;kjk;jasjkllfkjlkejajklfkjeafjaej jafljaljejljkalkjlejkleklj;jekjlajklekjlajk;lkjl;kljaklsklj
-                      eajsklfklalkjkjlekljajkljkaefajkkljakjlssasasaskakjskljfjklakljelkjajkesljljkelkjafljkakjlfljkljk jklfjkekfkjlaelkjfalkjlfkja
-                      aklflkljakljekjlfeklakjlfkjlklfkjafkjkajkklfkljaljjkellkj;jlkfakjlejklakjlfejklajlkfkljklfjkekjljfkkljakjlfjklkjlakjlfkjlakljkl
-                      aelfjjkallkfajklekfjlajklkjlkkjlajkfklflk;ealkefklj;alkjfjkl;alkj;ljkf;a;ljkfjlk;ajl;kfkjal;jekjfjkljflkaljkefjkjalkljajlk;jkll
+                  <div style={{overflow: 'hidden', textOveflow: 'ellipsis', width: '50%'}}>
+                  <Typography variant="heading">
+                     This is a paragraph to describe what I am doing and want to accomplish. I don't know what else to put here to be honest. I hope everyone out there is having a good time.
                   </Typography>
                   </div>
                   

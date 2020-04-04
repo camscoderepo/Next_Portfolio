@@ -5,7 +5,6 @@ import Projects from "../components/Projects";
 import { css } from "@emotion/core";
 import { RingLoader } from 'react-spinners'
 import Config from "../config/personal";
-import Navbar from '../components/Layouts/Navbar';
 
 
 
@@ -28,15 +27,15 @@ const Personal = ({data}) => {
         {isLoading ? (
             <div style={{ height: "640px" }}>
             <RingLoader css={override} size={38} />
-            <Navbar></Navbar>
             </div>
         ) : (
             <>
-            <Navbar></Navbar>
+            
             <div className="container" style={{ overflow: "hidden" }}>
                 <Profile Config={Config} />
                 <Projects data={data}  />
             </div>
+           
             <style jsx>
                 {`
             .container {

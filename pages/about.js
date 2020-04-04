@@ -6,7 +6,6 @@ import Box from '@material-ui/core/Box'
 const About = () => {
     return (
     <>
-    <Navbar />
         <Container className="container" align="center">
             <Box p={1}>
                 <Typography variant="h2">
