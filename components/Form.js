@@ -16,7 +16,8 @@ const useStyles = makeStyles ((theme) => ({
     paddingTop: theme.spacing(75)
   },
   submit: {
-    margin: theme.spacing(1,0,8)
+    margin: theme.spacing(1,0,8),
+    textColor: 'white'
   },
   form: {
     paddingBottom: theme.spacing(6),
@@ -25,6 +26,10 @@ const useStyles = makeStyles ((theme) => ({
   title: {
     paddingTop: theme.spacing(6),
     paddingBottom: theme.spacing(6)
+  },
+  color: {
+    backgroundColor: '#1476f2',
+    
   }
 }))
 
@@ -155,7 +160,7 @@ const useStyles = makeStyles ((theme) => ({
             </FormControl>
             </div>
             <div className={classes.submit}>
-                <Button variant="contained" fullWidth color="primary" type="submit" disabled={status.submitting}>
+                <Button variant="contained" fullWidth className={classes.color}  type="submit" disabled={status.submitting}>
                 {!status.submitting
                     ? !status.submitted
                     ? 'Submit'
