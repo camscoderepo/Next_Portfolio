@@ -12,11 +12,15 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles ((theme) => ({
+  root: {
+    paddingTop: theme.spacing(75)
+  },
   submit: {
     margin: theme.spacing(1,0,8)
   },
   form: {
-    paddingBottom: theme.spacing(6)
+    paddingBottom: theme.spacing(6),
+    
   },
   title: {
     paddingTop: theme.spacing(6),
@@ -89,7 +93,7 @@ const useStyles = makeStyles ((theme) => ({
       }
       return (
         
-        <Container component="main" maxWidth="xs">
+        <Container component="main" maxWidth="xs" className={classes.root}>
         <CssBaseline />
         <div className={classes.title}>
             <Typography  component="h1" align='center' variant="h4">

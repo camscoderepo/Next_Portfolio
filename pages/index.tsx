@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import Navbar from '../components/Layouts/Navbar';
 import Hero from '../components/Hero';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import { NextPage } from 'next';
@@ -20,10 +19,9 @@ const useStyles = makeStyles((theme: Theme ) =>
 
 const Home: NextPage<{}> = () => (
     <>
-        {/* <Navbar /> */}
         <Hero />
         <AboutUs />
-        <ProjectAlbum />
+        {/* <ProjectAlbum /> */}
         <Form />
     </>
 );

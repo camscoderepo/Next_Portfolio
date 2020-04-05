@@ -27,7 +27,7 @@ import { FormHelperText } from "@material-ui/core";
 const drawerWidth = 240;
 
 
-const useStyles = makeStyles((theme: Theme) =>
+const useStyles = makeStyles((theme: Theme) => 
   createStyles({
     root: {
       display: "flex"
@@ -54,7 +54,8 @@ const useStyles = makeStyles((theme: Theme) =>
       display: "none"
     },
     show: {
-      display: "flex"
+      display: "flex",
+      backgroundColor: "#1476f2"
     },
     drawer: {
       width: drawerWidth,
@@ -160,17 +161,7 @@ export default function Navbar() {
             </ListItemLink>
           ))}
         </List>
-        <Divider />
-        {/* <List>
-          {["All mail", "Trash", "Spam"].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List> */}
+        <Divider />}
       </Drawer>
       <main
         className={clsx(classes.content, {

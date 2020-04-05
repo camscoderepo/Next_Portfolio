@@ -10,7 +10,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      height: '75vh',
+      height: '100vh',
       paddingTop: '100px',
       paddingLeft: '10px',
     },
