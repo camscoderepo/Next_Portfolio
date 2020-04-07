@@ -8,7 +8,7 @@ const useStyles = makeStyles({
         height: '80vh',
         width: '100%',
         padding: '10px',
-        background: 'contain'
+        objectFit: 'cover'
       }
 })
 

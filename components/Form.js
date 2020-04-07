@@ -13,7 +13,7 @@ import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles ((theme) => ({
   root: {
-    paddingTop: theme.spacing(75)
+    paddingTop: theme.spacing(6)
   },
   submit: {
     margin: theme.spacing(1,0,8),

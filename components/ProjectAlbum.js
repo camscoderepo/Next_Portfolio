@@ -11,7 +11,7 @@ import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        paddingTop: theme.spacing(50)
+        paddingTop: theme.spacing(10)
     },
     icon: {
       marginRight: theme.spacing(2),

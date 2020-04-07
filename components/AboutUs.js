@@ -10,7 +10,6 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      height: '100vh',
       paddingTop: '100px',
       paddingLeft: '10px',
     },
@@ -23,10 +22,10 @@ const useStyles = makeStyles((theme) => ({
       
     },
     paper: {
-      margin: theme.spacing(4, 6),
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
+      paddingBottom: '10px'
     },
     avatar: {
       margin: theme.spacing(1),
@@ -49,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
 export default function AboutUs() {
     const classes = useStyles();
     return (
-        <Grid container component="main" className={classes.root}>
+        <Grid container className={classes.root}>
             <CssBaseline />
             <Grid item xs={false} sm={4} md={7} className={classes.image} />
             <Grid item xs={12} sm={8} md={5} square="true">
@@ -60,7 +59,7 @@ export default function AboutUs() {
                   <Typography component="h1" variant="h5">
                       About Us
                   </Typography>
-                  <div style={{overflow: 'hidden', textOveflow: 'ellipsis', width: '50%'}}>
+                  <div style={{ textOveflow: 'ellipsis', width: '50%'}}>
                   <p className={classes.paragraph}>
                      This is a paragraph to describe what I am doing and want to accomplish. 
                      I don't know what else to put here to be honest. 
