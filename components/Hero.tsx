@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Grid, createStyles, Theme } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core';
 
+
 const useStyles = makeStyles((theme: Theme) => 
     createStyles({
         media: {
@@ -15,7 +16,10 @@ const useStyles = makeStyles((theme: Theme) =>
             height: '100vh',
           },
         title: {
-    
+            paddingTop: '400px',
+            color: 'white',
+            fontWeight: 'bold',
+            
         },
     }),
 );
@@ -25,8 +29,9 @@ function Hero() {
     return (
     <Grid>
     <Card className={classes.media}>
-    <h1>Simple and Smart Solutions</h1>
-  
+        <div>
+            <h1 className={classes.title}>Simple and Smart Solutions</h1>
+        </div>
     </Card>
     </Grid>
     )

@@ -23,6 +23,7 @@
     "formik-material-ui": "^2.0.0-beta.1",
     "isomorphic-unfetch": "^3.0.0",
     "material-ui-icons": "^1.0.0-beta.36",
+    "moment": "^2.24.0",
     "next": "^9.3.0",
     "rc-if": "0.0.12",
     "react": "^16.13.0",
