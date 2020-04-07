@@ -50,8 +50,8 @@ export default function AboutUs() {
     return (
         <Grid container className={classes.root}>
             <CssBaseline />
-            <Grid item xs={false} sm={4} md={7} className={classes.image} />
-            <Grid item xs={12} sm={8} md={5} square="true">
+            <Grid item xs={false} sm={4} md={6} className={classes.image} />
+            <Grid item xs={12} sm={8} md={6} square="true">
               <div className={classes.paper}>
                   {/* <Avatar className={classes.avatar}>
           
