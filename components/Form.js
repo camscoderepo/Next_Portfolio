@@ -17,7 +17,7 @@ const useStyles = makeStyles ((theme) => ({
   },
   submit: {
     margin: theme.spacing(1,0,8),
-    textColor: 'white'
+    color: 'white'
   },
   form: {
     paddingBottom: theme.spacing(6),
@@ -29,7 +29,7 @@ const useStyles = makeStyles ((theme) => ({
   },
   color: {
     backgroundColor: '#1476f2',
-    
+    color: 'white'
   }
 }))
 
