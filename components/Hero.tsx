@@ -1,13 +1,18 @@
 import React from 'react';
-import { CardMedia, Grid, createStyles, Theme } from '@material-ui/core';
+import { Card, Grid, createStyles, Theme } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme: Theme) => 
     createStyles({
         media: {
+            display: 'flex',
+            backgroundImage: 'url(https://source.unsplash.com/random)',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            backgroundAttachment: 'fixed',
+            justifyContent: 'center',
             height: '100vh',
-            width: 'auto',
-            padding: '10px',
           },
         title: {
     
@@ -19,11 +24,10 @@ function Hero() {
     const classes = useStyles();
     return (
     <Grid>
-    <CardMedia
-        className={classes.media}
-        image="https://source.unsplash.com/random"
-        title="dummyimage"
-    />
+    <Card className={classes.media}>
+    <h1>Simple and Smart Solutions</h1>
+  
+    </Card>
     </Grid>
     )
 }
