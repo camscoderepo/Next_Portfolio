@@ -30,7 +30,15 @@ const useStyles = makeStyles ((theme) => ({
   color: {
     backgroundColor: '#1476f2',
     color: 'white'
-  }
+  },
+  image: {
+    backgroundImage: 'url(https://source.unsplash.com/random)',
+    backgroundRepeat: 'no-repeat',
+    backgroundColor:
+      theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
+    backgroundPosition: 'center',
+    
+  },
 }))
 
 
@@ -99,12 +107,15 @@ const useStyles = makeStyles ((theme) => ({
       return (
         
         <Container component="main" maxWidth="xs" className={classes.root}>
-        <CssBaseline />
+        {/* <CssBaseline /> */}
         <div className={classes.title}>
             <Typography  component="h1" align='center' variant="h4">
                 Contact Me
             </Typography>
         </div>
+        <Grid container>
+          <Grid item className={classes.image}  />
+        </Grid>
         <form onSubmit={handleOnSubmit}>
             <div className={classes.form}>
             <FormControl fullWidth>
@@ -176,6 +187,7 @@ const useStyles = makeStyles ((theme) => ({
         {!status.info.error && status.info.msg && (
           <div className="success">{status.info.msg}</div>
         )}
+        
       </Container>
       
     )

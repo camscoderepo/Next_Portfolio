@@ -11,15 +11,17 @@ const useStyles = makeStyles((theme: Theme) =>
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
-            backgroundAttachment: 'fixed',
+           // backgroundAttachment: 'fixed',
             justifyContent: 'center',
-            height: '100vh',
+            height: '80vh',
           },
         title: {
             paddingTop: '400px',
             color: 'white',
             fontWeight: 'bold',
-            
+            '@media (max-width: 400px)': {
+                paddingLeft: '50px'
+            }
         },
     }),
 );
