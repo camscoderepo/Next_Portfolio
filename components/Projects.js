@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Fade from "react-reveal/Fade";
 import RcIf from 'rc-if';
-import { Grid, Card, CardContent, CardActionArea } from '@material-ui/core';
+import { Grid, Card, CardContent, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 // import Tags from './Tags'
 
@@ -20,7 +20,8 @@ const useStyles = makeStyles((theme) => ({
     background: '#fff',
     transition: 'all 0.6s',
     height: '300px'
-  }
+  },
+
 }))
 
 export default ({ data }) => {
@@ -42,18 +43,18 @@ export default ({ data }) => {
               </div>
               <div className="buttons" style={{ marginBottom: "20px" }}>
                 <span>
-                  <a href={i.html_url} target="_blank" className="btn">
+                  <Button color="primary" href={i.html_url} target="_blank" className="btn">
                     Repo
-                  </a>
+                  </Button>
                 </span>
                 <span>
                   <RcIf if={i.homepage != null}>
-                      <a href={i.homepage} target="_blank" className="btn">
+                      <Button color="primary" href={i.homepage} target="_blank" className="btn">
                       Demo
-                      </a>
+                      </Button>
                   </RcIf>
                   <RcIf if={i.homepage == null}>
-                    <a href="/stock" target="_blank" className="btn">More info!</a>
+                    <Button color="primary" href="/stock" target="_blank" className="btn">More info!</Button>
                   </RcIf>
                   
                 </span>
@@ -105,7 +106,7 @@ export default ({ data }) => {
         }
         .buttons > span > .btn {
           text-decoration: none;
-          color: #fff;
+          color: blue;
           background: #0080edbd;
           border-radius: 20px;
           box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
