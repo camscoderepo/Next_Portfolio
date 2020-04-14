@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Fade from "react-reveal/Fade";
 import RcIf from 'rc-if';
-import { Grid, Card, CardContent, Button } from '@material-ui/core';
+import { Grid, Card, CardContent, Button, CardActions } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 // import Tags from './Tags'
 
@@ -21,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
     transition: 'all 0.6s',
     height: '300px'
   },
+  
 
 }))
 
@@ -41,9 +42,9 @@ export default ({ data }) => {
               <div style={{ marginBottom: "70px" }}>
                 {/* <Tags name={i.name}></Tags> */}
               </div>
-              <div className="buttons" style={{ marginBottom: "20px" }}>
+              <CardActions className="buttons" style={{ marginBottom: "20px" }}>
                 <span>
-                  <Button color="primary" href={i.html_url} target="_blank" className="btn">
+                  <Button size="small" color="primary" href={i.html_url} target="_blank" className="btn">
                     Repo
                   </Button>
                 </span>
@@ -54,11 +55,11 @@ export default ({ data }) => {
                       </Button>
                   </RcIf>
                   <RcIf if={i.homepage == null}>
-                    <Button color="primary" href="/stock" target="_blank" className="btn">More info!</Button>
+                    <Button  color="primary" href="/stock" target="_blank" className="btn">More info!</Button>
                   </RcIf>
                   
                 </span>
-              </div>
+              </CardActions>
             </Card>
           </Fade>
         ))}
