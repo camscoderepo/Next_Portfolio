@@ -1,5 +1,5 @@
 import React from 'react';
-import { Paper, Grid, createStyles, Theme } from '@material-ui/core';
+import { Paper, Grid, CardMedia, createStyles, Theme } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core';
 
 
@@ -10,32 +10,35 @@ const useStyles = makeStyles((theme: Theme) =>
             backgroundImage: 'url(https://source.unsplash.com/random)',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
+            backgroundSize: '100%',
             justifyContent: 'center',
             
            
           },
         title: {
-            paddingTop: '400px',
-            color: 'white',
-            fontWeight: 'bold',
-            '@media (max-width: 400px)': {
-                paddingLeft: '50px'
-            }
+            
+            // color: 'white',
+            // fontWeight: 'bold',
+            // '@media (max-width: 400px)': {
+            //     paddingLeft: '50px'
+            // }
         },
+        cardMedia: {
+            height: 140,
+            paddingTop: '56.25%',
+        }
     }),
 );
 
 function Hero() {
     const classes = useStyles();
     return (
-   
     <Paper className={classes.media}>
-        <div>
-            <h1 className={classes.title}>Simple and Smart Solutions</h1>
-        </div>
+        <CardMedia 
+            className={classes.cardMedia}
+            image="https://source.unsplash.com/random"
+        />
     </Paper>
-    
     )
 }
 
