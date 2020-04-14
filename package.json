@@ -22,6 +22,7 @@
     "formik": "^2.1.4",
     "formik-material-ui": "^2.0.0-beta.1",
     "isomorphic-unfetch": "^3.0.0",
+    "jss-plugin-template": "^10.1.1",
     "material-ui-icons": "^1.0.0-beta.36",
     "moment": "^2.24.0",
     "next": "^9.3.0",
@@ -29,7 +30,8 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-reveal": "^1.2.2",
-    "react-spinners": "^0.8.1"
+    "react-spinners": "^0.8.1",
+    "styled-jss": "^2.2.3"
   },
   "devDependencies": {
     "@types/node": "^13.9.3",

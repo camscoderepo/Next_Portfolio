@@ -6,7 +6,7 @@ import { CssBaseline } from '@material-ui/core';
 import AboutUs from '../components/AboutUs';
 import ProjectAlbum from '../components/ProjectAlbum';
 import Form from '../components/Form';
-
+import Personal from './personal';
 
 const useStyles = makeStyles((theme: Theme ) => 
     createStyles({
@@ -21,7 +21,6 @@ const Home: NextPage<{}> = () => (
     <>
         <Hero />
         <AboutUs />
-        {/* <ProjectAlbum /> */}
         <Form />
     </>
 );
