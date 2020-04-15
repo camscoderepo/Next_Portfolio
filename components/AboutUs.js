@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor:
         theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
       backgroundPosition: 'center',
-      
+      backgroundSize: '100%'
     },
     paper: {
       display: 'flex',
@@ -50,8 +50,8 @@ export default function AboutUs() {
     return (
         <Grid container className={classes.root}>
             <CssBaseline />
-            <Grid item xs={12} sm={4} md={6} className={classes.image} />
-            <Grid item xs={12} sm={8} md={6} square="true">
+            <Grid item xs={12} sm={6} md={6} className={classes.image} />
+            <Grid item xs={12} sm={6} md={6} square="true">
               <div className={classes.paper}>
                   {/* <Avatar className={classes.avatar}>
           
