@@ -24,6 +24,6 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx", "components/Projects.js", "components/Profile.js", "components/Layouts/MainLayout.js"
+    "**/*.tsx", "components/Projects.js", "components/Profile.js", "components/Layouts/MainLayout.js", "components/Hero.js"
   ]
 }
