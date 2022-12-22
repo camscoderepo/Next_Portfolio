@@ -26,7 +26,7 @@
     "jss-plugin-template": "^10.1.1",
     "material-ui-icons": "^1.0.0-beta.36",
     "moment": "^2.24.0",
-    "next": "^9.3.0",
+    "next": "^9.5.5",
     "rc-if": "0.0.12",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
